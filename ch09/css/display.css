@@ -1,0 +1,21 @@
+body{
+  padding-top: 50px;
+}
+
+/* block은 width height margin 작동함*/
+/* inline은 작동안함*/
+/* inline-block은 inline으로 배치하되 요소자체는 block성질 */
+span{
+  border: 1px solid black;
+  background-color: antiquewhite;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  color: red;
+  font-size: 20px;
+  font-weight: 900;
+  /* display: inline; */
+  /* display: block; */
+  display: inline-block;
+}

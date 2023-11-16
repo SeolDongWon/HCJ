@@ -1,0 +1,31 @@
+h1{
+  width: 50%;
+  height: 100px;
+  color: red;
+  border: 100px rgb(58, 226, 43);
+  border-style: dashed;
+  background-color:    yellow;
+}
+p{
+  color: blue;
+  border: 10px solid red;
+  border-style: dotted;
+}
+p#check2{
+  font-size: 40px;
+}
+p#check1,p#check3{
+  color: tomato;
+}
+p.check4{
+  color: burlywood;
+}
+
+a[target='_self']{
+  font-size: 30px;
+}
+a:link{color:blue}
+a:hover{color:red}
+a:visited{color:green}
+a:active{color:yellow}
+a:focus{color:aqua}

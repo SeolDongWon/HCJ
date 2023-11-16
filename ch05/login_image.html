@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="서버페이지.jsp" method="get">
+    <fieldset>
+      <legend>배송정보</legend>
+      <p>*는 필수입력</p>
+      <!-- <input type="hidden" name="admin_id" value="admin1234"> -->
+      <input type="text" name="admin_id" value="admin1234" readonly><br>
+      
+      <label for="user_id">아 이 디 : <input type="text" placeholder="최대 10자리" id="user_id" size="10"></label><br>
+      <label for="user_pw">비밀번호: <input type="password" autofocus placeholder="최대 12자리" id="user_pw" size="10"></label><br>
+      <label>*배송주소: <input type="text"  placeholder="주소입력해" required></label><br>
+      <label for="memo">메모</label><br>
+      <textarea name="memo" id="memo" cols="30" rows="10"></textarea><br>
+
+      <label for="list_id">사이트선택</label>
+      <input list="list_id_value" name="list_id" id="list_id">
+      <datalist id="list_id_value">
+        <option value="http://www.naver.com">네이버</option>
+        <option value="http://www.nate.com">네이트</option>
+        <option value="http://www.daum.com">다음</option>
+
+      </datalist><br>
+
+      <input type="file">
+      <table>
+        <tr>
+          <td><input type="submit" value="전송">
+          <td><input type="reset" value="취소">
+          <td><input type="image" src="../image/05.login.png" alt="이미지버튼"></td>
+          <td><input type="button" value="이벤트발생" onclick="window.open('../image/05.login.png')"></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+  <button type="button">버튼전송</button>
+
+
+</body>
+
+</html>

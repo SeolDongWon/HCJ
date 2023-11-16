@@ -1,0 +1,56 @@
+.container {
+  width: 1200px;
+  height: 98vh;
+  /* border: 1px dotted red; */
+  padding: 10px;
+  /* display: block; */
+  /* align-items: center; */
+}
+
+header,
+nav,
+footer {
+  width: 1200px;
+  height: 15%;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 1200px;
+  height: 450px;
+  /* border: 1px dotted red; */
+  margin: 0 auto;
+  /* padding: 5px; */
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+/* 부모에 flex, justify-content, align-item을 주면 자식은 부모크기로 제한됨 */
+/* 이 때 부모와 자식에 margin, padding을 줘서 정렬하자 */
+section>article {
+  border: 1px solid black;
+  /* margin: 5px; */
+  /* padding: 5px; */
+}
+
+article:nth-child(1) {
+  width: 300px;
+  height: 100%;
+}
+
+article:nth-child(2) {
+  width: 600px;
+  height: 300px;
+  margin: 0px 5px;
+}
+
+article:nth-child(3) {
+  width: 300px;
+  height: 200px;
+}

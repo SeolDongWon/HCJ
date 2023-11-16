@@ -1,0 +1,74 @@
+/* 공통부분 */
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+
+/* 메뉴부분 */
+ul{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px dotted yellow; */
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgb(53, 94, 169);
+  border-radius: 10px;
+}
+
+ul>li{
+  display: inline-block;
+  /* border: 1px dotted red; */
+}
+
+li#li_login{
+  float: right;
+}
+
+li > a{
+  /* border: 1px dotted green; */
+  color: white;
+  display: inline-block;
+  padding: 14px 16px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+li:hover > a{
+  background-color: gray;
+}
+li.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/* 하위메뉴 */
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: beige;
+  box-shadow: 0px 8px 16px 0px red;
+  opacity: 1;
+  z-index: 1;
+}
+
+.dropdown-content > a{
+  color: black;
+  display: block;
+  /* display: inline-block; */
+  /* display: flex */
+  /* display: flexbox; */
+  /* display: grid; */
+  /* display: list-item; */
+  padding: 14px 16px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.dropdown-content > a:hover{
+  background-color: gray;
+}
+

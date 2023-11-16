@@ -1,0 +1,55 @@
+/* 전체선택 */
+body, ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+
+}
+
+
+ul{
+  list-style-type: none;
+  background-color: rgb(53, 94, 169);
+  width: 960px;
+  /* margin: 0; */
+  margin: auto;
+}
+
+ul>li{
+  display: inline-block;
+}
+li>a{
+  display: inline-block;
+  padding: 14px 20px;
+}
+
+li>a:hover{
+  background-color: #6799ff;
+}
+
+li#li_login{
+  float: right;
+}
+
+.dropdown-content{
+  position: absolute;
+  display: none;
+  background-color: beige;
+}
+.dropdown-content a{
+  display: block;
+  padding: 14px 20px;
+}
+
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.dropdown-content>a:hover{
+  background-color: #6799ff;
+}

@@ -1,0 +1,64 @@
+/* 공통부분 */
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  /* border: 1px dotted red; */
+  /* width: 100%; */
+  height: 100px;
+  padding: 5px;
+  background-color: antiquewhite;
+  /* background-image: url("/image/pic2.jpg"); */
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  /* overflow: hidden; */
+  border-bottom: 1px solid #bdbdbd;
+  color: black;
+}
+
+.backimg{
+  height: 100px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  overflow: hidden;
+  /* border: 1px dotted blue; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+.backimg img{
+  /* border: 1px dotted yellow; */
+}
+.title{
+  /* width: 30%; */
+  /* border: 1px dotted blue; */
+  position: absolute;
+  color: yellow;
+}
+/* .title h1{
+  overflow: hidden;
+} */
+
+ul{
+  border: 1px dotted red;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background: white;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+li a{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  background: #555;
+  color: white;
+}

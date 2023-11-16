@@ -1,0 +1,56 @@
+body {
+  height: 900px;
+}
+
+div.container {
+  width: 900px;
+  /* width: 90%; */
+  height: 100%;
+  border: 1px dotted purple;
+  background-color: antiquewhite;
+  margin: auto;
+  padding: 20px;
+}
+
+p#inma{
+  color: yellow;
+}
+div {
+  border: 1px dotted blue;
+}
+
+
+div.text {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+div.header {
+  height: 24%;
+  margin-bottom: 20px;
+}
+
+div.header h4 {
+  color: red;
+  text-align: center;
+}
+
+div.main {
+  text-align: center;
+  height: 48%;
+  margin-bottom: 20px;
+}
+
+p#main1p {
+  color: red;
+  font-style: italic;
+}
+
+div.footer {
+  height: 24%;
+}
+
+div.footer>h4 {
+  color: blue;
+  text-align: center;
+}

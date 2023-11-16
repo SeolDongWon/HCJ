@@ -1,0 +1,184 @@
+/* 바디에 바로 속성값을 넣지마 */
+/* 바디 바로 다음에 container를 쓰자 */
+body{
+  width: 1400px;
+  height: 1150px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* -----------------------------헤더부분------------------------------ */
+header{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header>i#logo{
+  font-size: 50px;
+  font-weight: 900;
+  margin-left: 20px;
+}
+header>ul{
+  display: flex;
+}
+
+header>ul>li>a{
+  color: green;
+}
+
+/* -----------------------------네비부분------------------------------ */
+
+nav>ul>li{
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+
+.content{
+  background-color: white;
+  position: absolute;
+  display: none;
+  margin-top: 2px;
+}
+li>a{
+  display: block;
+  padding: 10px 15px;
+}
+
+.content>a{
+  display: block;
+  padding: 15px;
+}
+
+li.member{
+  float: right;
+  font-size: 13px;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+li.member>a{
+  border: 2px solid green;
+  border-radius: 50px;
+  color: green;
+}
+li.member>a:hover{
+  color: red;
+  border: 2px solid red;
+}
+header>ul>li>a:hover{
+  color: red;
+}
+nav>ul>li.menu:hover {
+  border-bottom: 2px solid green;
+}
+li:hover >a{
+  color: green;
+}
+li:hover .content{
+  display: block;
+}
+.content>a:hover{
+  color: green;
+}
+
+/* -----------------------------섹션부분------------------------------ */
+
+section{
+  background-color: beige;
+  height: 800px;
+  border-bottom: 2px solid rgb(194, 194, 194);
+  border-top: 2px solid rgb(194, 194, 194);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section>div.leftSide{
+  width: 42%;
+  height: 100%;
+}
+section>div>img{
+  box-shadow: 0px 2px 4px 3px black;
+}
+section>div.leftSide>img{
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+section>div.rightSide{
+  width: 55%;
+  height: 100%;
+}
+section>div.rightSide>img{
+  max-width: 100%;
+}
+section>.rightSide>form>h3{
+  display: flex;
+  justify-content: center;
+}
+
+section>.rightSide>form>fieldset>table{
+  border-collapse: collapse;
+  font-size: 15px;
+}
+tr{
+  text-align: center;
+}
+tr#attribute{
+  font-weight: 900;
+}
+td{
+  padding: 5px;
+}
+td#range{
+  column-span: 2;
+}
+td#good{
+  background-color: aquamarine;
+  color: white;
+}
+td#nomal{
+  background-color: greenyellow;
+  color: white;
+}
+td#bad1{
+  background-color: yellow;
+}
+td#bad2{
+  background-color: orange;
+}
+td#bad3{
+  background-color: red;
+  color: white;
+}
+
+/* -----------------------------푸터부분------------------------------ */
+footer{
+  padding: 10px 0px 30px 0px;
+  font-size: 14px;
+}
+.footer:nth-child(1){
+  padding: 10px 100px 10px 100px;
+  border-bottom: 2px solid rgb(194, 194, 194);
+}
+.footer.content1>a{
+  padding-right: 20px;
+}
+.footer.content1>a:hover{
+  color: green;
+}
+
+.footer:nth-child(2){
+  padding: 10px 100px 10px 100px;
+}

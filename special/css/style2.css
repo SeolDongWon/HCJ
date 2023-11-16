@@ -1,0 +1,66 @@
+/* div {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background: red;
+  display: flex;
+  display: inline;
+  justify-content: end;
+  align-items: end;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+} */
+
+span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 5px solid blue;
+  margin: 20px;
+  padding: 20px;
+  background: red;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+div.grand-parent {
+  width: 90%;
+  height: 50vh;
+  border: 1px dotted lightsalmon;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+div.parent {
+  width: 90%;
+  height: 90%;
+  border: 2px solid green;
+  position: relative;
+  top: 200px;
+  left: 200px;
+}
+div.child{
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.relative{
+  font-size: 30px;
+  /* position:relative; */
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+/* div.absolute{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+} */

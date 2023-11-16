@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>option연습</title>
+</head>
+
+<body>
+  <form action="">
+    <fieldset>
+      <table>
+        <tr>
+          <td>성별&nbsp;&nbsp;&nbsp;</td>
+          <td><input type="radio" name="gender" id="man" required>남성</td>
+          <td><input type="radio" name="gender" id="woman">여성
+          </td>
+        </tr>
+        <tr>
+          <td>취미</td>
+          <td><input type="checkbox" name="hobby" id="climbing">등산</td>
+          <td><input type="checkbox" name="hobby" id="tarveling">여행
+            <input type="checkbox" name="hobby" id="fishing">낚시
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>컴퓨터 운영체제</td>
+          <td>
+            <select name="os" size="10" id="os" required>
+              <option value="win">win</option>
+              <option value="mac">mac</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>웹 프로그램 과목1 </td>
+          <td>
+            <select name="programing" size="5" id="programing" required>
+              <option value="java">JAVA</option>
+              <option value="sql">SQL</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>기타사항</td>
+          <td>
+            <textarea name="textarea" id="" cols="30" rows="10" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="제출"></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

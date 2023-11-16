@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>231109member</title>
+</head>
+
+<body>
+  <form action="회원가입" method="get">
+    <fieldset>
+      <legend>회원가입</legend>
+      <table>
+        <tr>
+          <td><label for="id">아이디</label></td>
+          <td><input type="text" name="id" id="id" size="60" required
+              placeholder="아이디를 입력하시오(영문자와 숫자로 구성되며 6~12로 입력, 첫글자는 반드시 영문자)"></td>
+        </tr>
+        <tr>
+          <td><label for="pw">비밀번호</label></td>
+          <td><input type="password" name="pw" id="pw" size="60" required
+              placeholder="비밀번호를 입력하시오.(문자와 숫자._로 구성되며 8~12로 입력)"></td>
+        </tr>
+        <tr>
+          <td><label for="repw">비밀번호 재확인</label></td>
+          <td><input type="password" name="repw" id="repw" size="60" required placeholder="비밀번호를 잽입력하시오."></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><label for="name">이름</label></td>
+          <td><input type="text" name="name" id="name" size="60" required></td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td><input type="radio" name="gender" id="man" required>남성
+            <input type="radio" name="gender" id="woman" required>여성
+          </td>
+        </tr>
+        <tr>
+          <td>생일</td>
+          <td><input type="date" name="birthDay" id="birthDay" required></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="email" name="email" id="email" size="60" placeholder="본인확인(이메일)" required></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <select name="phone1" id="phone1">
+              <option value="+82">+82</option>
+              <option value="010">010</option>
+              <option value="011">011</option>
+            </select>
+            <input type="text" name="phone" id="phone" size="60" pattern="[0-9]{4}-[0-9]{4}" placeholder="####-####"
+              required>
+            <input type="button" value="인증">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="text" name="phoneOk" id="phoneOk" size="60" placeholder="인증번호" required>
+            <input type="button" value="확인">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+
+</html>

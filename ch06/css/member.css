@@ -1,0 +1,29 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+fieldset {
+  width: 600px;
+  background-color: azure;
+  box-shadow: 0px 8px 16px 0px black;
+  display: flex;
+  justify-content: space-around;
+}
+
+input:focus {
+  box-shadow: 0px 0px 20px 0px red;
+
+}
+i#Profile{
+  font-size: 300px;
+}
+
+td{
+}
+input#phone{
+  margin-left: 3px;
+}

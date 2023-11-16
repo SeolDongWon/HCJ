@@ -1,0 +1,33 @@
+div.contain{
+  border:1px solid black;
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+div.visible{
+  border: 1px dotted red;
+  width: 400px;
+  height: 150px;
+}
+
+div.visi{
+  overflow:visible;
+}
+/* 내용이 범위를 넘어가면 안보임 */
+div.invisi{
+  overflow:hidden;
+}
+/* 내용이 범위를 안넘어가도 스크롤 생성 */
+div.scroll{
+  overflow:scroll;
+}
+/* 내용이 범위를 넘어가면 스크롤 생성*/
+div.auto{
+  overflow:auto;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="상품선택과 포장유무를 서버에 보냄" method="get">
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해 주세요.</b></p>
+      <label for="s_3"><input type="checkbox" checked value="s_3" id="s_3">선물용 3kg</label>
+      <label for="s_5"><input type="checkbox" checked value="s_5" id="s_5">선물용 5kg</label>
+      <label for="f_3"><input type="checkbox" checked value="f_3" id="f_3">가정용 3kg</label>
+      <label for="f_5"><input type="checkbox" checked value="f_5" id="f_5">가정용 5kg</label>
+      <p><b>포장 선택</b></p>
+      <label for="yes"><input type="radio" name="gift" checked value="yes" id="yes">선물 포장</label>
+      <label for="no"><input type="radio" name="gift" value="no" id="no">선물 포장 안함</label>
+      <br><br>
+      <input type="reset" value="취소">
+      <input type="submit" value="완료">
+    </fieldset>
+  </form>
+</body>
+
+</html>

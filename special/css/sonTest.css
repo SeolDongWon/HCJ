@@ -1,0 +1,38 @@
+body{
+
+}
+
+div.header{
+  background: antiquewhite;
+}
+div.header div{
+  font-weight: bold;
+}
+div.header > div{
+  font-weight: 100;
+}
+
+
+div.header > div.son1 > div.son12{
+  color: red;
+}
+div.header > div.son1 > div.son11{
+  color: blue;
+}
+
+div.header > div.son2 > div{
+  font-style: italic;
+}
+
+
+
+
+
+
+
+div.main{
+  background: aquamarine;
+}
+div.footer{
+  background: greenyellow;
+}
