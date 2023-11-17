@@ -1,9 +1,9 @@
 /* 바디에 바로 속성값을 넣지마 */
 /* 바디 바로 다음에 container를 쓰자 */
 body{
-  width: 1400px;
+  width: 1200px;
   height: 1150px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-header>i#logo{
+header>a>i#logo{
   font-size: 50px;
   font-weight: 900;
   margin-left: 20px;
@@ -97,10 +97,11 @@ li:hover .content{
 
 section{
   background-color: beige;
-  height: 800px;
+  /* height: 800px; */
+  /* height: 65%; */
   border-bottom: 2px solid rgb(194, 194, 194);
   border-top: 2px solid rgb(194, 194, 194);
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
   display: flex;
   justify-content: space-between;
 }

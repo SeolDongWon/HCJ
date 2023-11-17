@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thankYou_Join</title>
+  <link rel="stylesheet" href="./css/thankYou_Join.css">
+  <script src="https://kit.fontawesome.com/3096a27d00.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="./thankYou_Main.html"><i class="fa-solid fa-truck-fast" style="color: #dc0404;" id="logo"></i></a>
+    <ul>
+      <li class="menu"><a href="#home" class="dropbtn">Home</a></li>
+      <li class="menu"><a href="#sitemap" class="dropbtn">Sitemap</a></li>
+    </ul>
+  </header>
+  <nav>
+    <ul>
+      <li class="menu">
+        <a href="#home" class="dropbtn">Home</a>
+      </li>
+      <li class="menu">
+        <a href="#gallery" class="dropbtn">gallery</a>
+      </li>
+      <li class="menu">
+        <a href="#board" class="dropbtn">게시판</a>
+        <div class="content">
+          <a href="#">자유 게시판</a>
+          <a href="#">문의 게시판</a>
+          <a href="#">건의 게시판</a>
+        </div>
+      </li>
+      <li class="menu">
+        <a href="#" class="dropbtn">멀티미디어</a>
+        <div class="content">
+          <a href="#">음악 듣기</a>
+          <a href="#">동영상 보기</a>
+        </div>
+      </li>
+      <li class="menu">
+        <a href="#" class="dropbtn">상품구매</a>
+      </li>
+      <li class="menu">
+        <a href="#" class="dropbtn">찾아오시는길</a>
+      </li>
+      <li class="member">
+        <a href="./thankYou_Join.html" class="dropbtn">회원가입</a>
+      </li>
+      <li class="member">
+        <a href="./thankYou_Login.html" class="dropbtn">로그인</a>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <div class="title">
+      <h2>회원가입</h2>
+    </div>
+    <form action="" method="get">
+      <fieldset>
+        <table>
+          <tr>
+            <td><label for="id">아이디</label></td>
+            <td><input type="text" name="id" id="id" placeholder="아이디를 입력하시오(영문)" required="required"></td>
+          </tr>
+          <tr>
+            <td><label for="pw">비밀번호</label></td>
+            <td><input type="password" id="pw" name="pw" placeholder="비밀번호를 입력하시오" required="required"></td>
+          </tr>
+          <tr>
+            <td><label for="repw">비밀번호 재확인</label></td>
+            <td><input type="password" id="repw" name="repw" placeholder="비밀번호를 재입력하시오" required="required"></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><label for="name">이름</label></td>
+            <td><input type="text" id="name" name="name" required="required"></td>
+          </tr>
+          <tr>
+            <td><label for="gender">성별</label></td>
+            <td><input type="radio" id="man" name="gender">남자
+              <input type="radio" id="woman" name="gender">여자
+            </td>
+          </tr>
+          <tr>
+            <td><label for="birthDay">생일</label></td>
+            <td><input type="date" id="birthDay" name="birthDay" required="required"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="email" id="email" name="email" placeholder="본인확인(이메일)" required="required"></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <select name="tel" id="telFront">
+                <option value="82">+82</option>
+                <option value="010">010</option>
+              </select>
+              <input type="tel" id="telBack" name="telBack" required="required">
+              <input type="button" id="confirm" name="confirm" value="인증">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="text" id="confirmNum" name="confirmNum" placeholder="인증번호" required="required">
+              <input type="button" id="InputconfirmNum" name="InputconfirmNum" value="확인">
+            </td>
+          </tr>
+          <tr class="inputORcancel">
+            <td colspan="2">
+              <input type="submit" id="input" name="input" value="전송">
+              <input type="reset" id="cancel" name="cancel" value="취소">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </section>
+  <footer>
+    <div class="footer content1">
+      <a href="">다운로드</a>
+      <a href="">개인정보처리방침</a>
+      <a href="">저작권지침및신고</a>
+      <a href="">이메일무단수집거부</a>
+    </div>
+    <div class="footer content2">
+      <p>왕십리캠퍼스 : 서울시 성동구 무학로2길 54 신방빌딩 4,5층 tel:12-345-7890</p>
+      <p>Copyright <span>ⓒ</span> 2018 mrhi, Inc. All right reserved. Contact webmaster for more information.
+        23-455-1234</p>
+    </div>
+  </footer>
+</body>
+
+</html>

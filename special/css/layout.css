@@ -1,0 +1,28 @@
+body{
+  border: 3px solid black;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+
+body>div{
+  border: 3px dotted red;
+}
+
+#header{
+
+}
+/* =======================컨테이너========================= */
+#container{
+
+}
+
+#footer{
+
+
+}
