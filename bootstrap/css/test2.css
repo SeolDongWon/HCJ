@@ -1,0 +1,7 @@
+div#img1{
+}
+div.main{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toggle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 border border-dark p-2">
+        <!-- ul.nav.nav.-tabs>(li.nav-item>a.nave-link)*3 -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a href="#HTML" class="nav-link" data-bs-toggle="tab">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a href="#CSS" class="nav-link active" data-bs-toggle="tab">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#JavaScript" class="nav-link" data-bs-toggle="tab">JavaScript</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="container tab-pane" id="HTML">
+            <table class="table">
+              <thead>
+                <tr class="table-danger">
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="container tab-pane active" id="CSS">
+            <table class="table">
+              <thead>
+                <tr class="table-secondary">
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="container tab-pane" id="JavaScript">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse quia suscipit, accusamus
+              voluptates veniam maiores, ipsa est beatae iste deserunt sunt dicta corporis quam fugiat fuga nemo?
+              Pariatur, illum?
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 border border-dark p-2">
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
