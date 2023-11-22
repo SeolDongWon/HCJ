@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simpleObj2</title>
+  <script>
+
+    //빈 객체 생성
+    let people = {};
+
+    //객체 안에 변수 넣기
+    people.name = "홍길동";
+    people.gender = "남자";
+
+    //객체 안에 함수 넣기
+    //객체 안에 있는 함수에서 멤버변수에 접근할 때는 this 사용
+    //1번 방법
+    people.sayName = function outputName() {
+      document.write("<h1>" + this.name + "</h1>");
+    }
+    //2번 방법
+    people.sayGender = function () {
+      document.write("<h1>" + this.gender + "</h1>");
+    }
+    //3번 방법
+    people.saySomething = (msg) => {
+      document.write("<h1>" + msg + "</h1>");
+    }
+
+    people.getName = function () {
+      return this.name;
+    }
+    people.getGender = function () {
+      return this.gender;
+    }
+    people.sayInfo = function () {
+      document.write("<h1>" + this.name + "님은 " + this.gender + "입니다." + "</h1>");
+    }
+
+    //객체 안의 메서드 호출 예제
+    people.sayName();
+    people.sayGender();
+    people.saySomething("Hello JavaScript");
+    people.sayInfo();
+    console.log(people);
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

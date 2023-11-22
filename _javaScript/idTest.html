@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>idTest</title>
+  <style>
+    #myid,
+    #chMyid,
+    .clmyid,
+    h1 {
+      background: #ff0;
+      font-size: 20px;
+      font-weight: blod;
+      color: #00f;
+    }
+  </style>
+
+  <script>
+    function doPrint() {
+      // document.getElementById("myid").innerHTML = "스크립트 실행";
+      // document.getElementById("myid").id = "chMyid";
+      // let clmyid = document.getElementsByClassName("clmyid");
+      // for (let i of clmyid){
+      //   i.innerHTML = "스크립트 실행";
+      // }
+      let arrH1obj = document.getElementsByTagName("h1");
+      // tgmyid[2].innerHTML = "스크립트 실행";
+      let i=0;
+      for (let data of arrH1obj){
+        data.innerHTML = "스크립트"+i+"실행";
+        i++;
+      }
+    }
+  </script>
+</head>
+<body>
+  <a href="#" onclick="doPrint()">자바스크립트 함수 호출하기</a>
+  <!-- <h1 id="myid" >안녕하세요</h1>
+  <h1 id="myid" >자바스크립트 입니다</h1>
+  <h1 id="myid" >강의 참 재미있죠?</h1> -->
+  <!-- <h1 class="clmyid">안녕하세요</h1>
+  <h1 class="clmyid">자바스크립트 입니다</h1>
+  <h1 class="clmyid">강의 참 재미있죠?</h1> -->
+  <h1>안녕하세요</h1>
+  <h1>자바스크립트 입니다</h1>
+  <h1>강의 참 재미있죠?</h1>
+</body>
+
+</html>

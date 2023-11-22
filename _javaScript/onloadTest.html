@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onloadTest</title>
+  <script>
+    function doPrint(num) {
+      var msg = num + "회 실행";
+      alert(msg);
+      document.getElementById("myid").innerHTML = msg;
+    }
+
+    doPrint(1);
+
+  </script>
+</head>
+
+<body onload="doPrint(4)">
+
+  <script>
+    doPrint(2);
+  </script>
+
+  <h1 id="myid">안녕하세요.</h1>
+
+  <script>
+    doPrint(3);
+  </script>
+
+</body>
+
+<script>
+  doPrint(5);
+</script>
+
+</html>

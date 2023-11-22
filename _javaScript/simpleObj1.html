@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simpleObj1</title>
+  <script>
+    function myfunc() {
+      document.getElementsByTagName('h2')[0].innerHTML = "나는 멤버함수입니다.";
+      // document.write("<h2>나는 멤버함수입니다.</h2>");
+    }
+
+    function proc() {
+      let student = null;
+      //빈 객체 생성
+      student = {};
+
+      //객체 안에 프로퍼티 추가
+      student.name = "홍길동";
+      student.age = 40;
+      student.gender = true;
+
+      //멤버함수 추가
+      // student.valueFunc = myfunc;
+
+      // student.valueFunc = function () {
+      //   document.getElementsByTagName('h2')[0].innerHTML = "나는 멤버함수입니다.2"+this.age;
+      // }
+
+      //람다식은 원래함수를 오버라이딩해서 쓰는 임시객체라서 this가 작동안함
+      student.valueFunc = () => {
+        document.getElementsByTagName('h2')[0].innerHTML = "나는 멤버함수입니다.3//" + this.age;
+      }
+
+      //프로퍼티 이용
+      document.getElementsByTagName('h1')[0].innerHTML = "student.name = " +
+        student.name + ", student.age = " + student.age + ", student.gender = " + (student.gender ? '남성' : '여성');
+
+      //멤버함수 콜
+      student.valueFunc();
+    }
+  </script>
+</head>
+
+<body onload="proc()">
+  <h1>객체값 출력</h1>
+  <h2>출력</h2>
+</body>
+
+</html>

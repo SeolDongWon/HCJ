@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onMouse</title>
+</head>
+<script>
+  function showValue() {
+    let h1obj = window.document.getElementsByClassName("h1calc");
+    let p = window.document.getElementsByTagName("p");
+    console.log("h1객체수 = " +h1obj.length)
+    console.log("p객체수 = " +p.length)
+    h1obj[0].innerHTML="10 + 50 = 60";
+  }
+  function hideValue(){
+    let h1obj = window.document.getElementsByTagName("h1");
+    console.log("h1객체수 = " +h1obj.length)
+    h1obj[0].innerHTML="10 + 50 = ?";
+  }
+  // body를 로드하기 전에 스크립트에서 body의 객체를 부를 수는 없다
+  // showValue() 
+</script>
+
+<body onload="showValue()">
+  <h1 class="h1calc"
+  style="border:1px solid black; background-color: beige;"
+   onmouseover="showValue()" onmouseout="hideValue()" >10 + 50 = ?</h1>
+
+  <p>결과를 확인하려면 수식위에 마우스를 올려보세요.</p>
+
+  <h1 class="h1calc"
+  style="border:1px solid black; background-color: beige;" 
+  onmouseover="showValue()" onmouseout="hideValue()" >10 + 50 = ?</h1>
+
+  <p>결과를 확인하려면 수식위에 마우스를 올려보세요.</p>
+
+  <h1 style="border:1px solid black; background-color: beige;"
+   onmouseover="showValue()" onmouseout="hideValue()" >10 + 50 = ?</h1>
+   <p>결과를 확인하려면 수식위에 마우스를 올려보세요.</p>
+   <p>결과를 확인하려면 수식위에 마우스를 올려보세요.</p>
+   <p>결과를 확인하려면 수식위에 마우스를 올려보세요.</p>
+   <p>결과를 확인하려면 수식위에 마우스를 올려보세요.</p>
+</body>
+<!-- body의 로드가 끝난 이후의 스크립트는 body의 객체를 부를 수 있다 -->
+<script>
+  showValue();
+</script>
+
+</html>

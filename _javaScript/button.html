@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button</title>
+  <script>
+    //이벤트 핸들러 함수
+    function openAlert() {
+      window.alert("클릭했어요");
+    }
+    function openSpanContentsChange() {
+      let msgSpan = null;
+      msgSpan = window.document.getElementById("msgSpan");
+      msgSpan.innerHTML = "<mark>지웠다</mark>";
+
+    }
+    function openSpanContentsChange2() {
+      let msgSpan = null;
+      msgSpan = window.document.getElementById("msgSpan");
+      if (msgSpan.innerHTML == '요소내용') {
+        msgSpan.innerHTML = "<mark>사라졌다</mark>";
+      } else {
+        msgSpan.innerHTML = "요소내용";
+      }
+    }
+
+
+
+    function calculate(value) {
+      let inputValue1 = Number(document.getElementById("inputValue1").value);
+      let inputValue2 = Number(document.getElementById("inputValue2").value);
+      let resultValue = null;
+
+      switch (value) {
+        case "+":
+          resultValue = inputValue1 + inputValue2;
+          break;
+        case "-":
+          resultValue = inputValue1 - inputValue2;
+          break;
+        case "*":
+          resultValue = inputValue1 * inputValue2;
+          break;
+        case "/":
+          resultValue = inputValue1 / inputValue2;
+          break;
+        case "%":
+          resultValue = inputValue1 % inputValue2;
+          break;
+        case "clear":
+          document.getElementById("inputValue1").value = '0';
+          document.getElementById("inputValue2").value = '0';
+          document.getElementById("resultValue").value = '0';
+          break;
+        case "inputValue1":
+          document.getElementById("inputValue1").value = '0';
+          break;
+        case "inputValue2":
+          document.getElementById("inputValue2").value = '0';
+          break;
+        case "resultValue":
+          document.getElementById("resultValue").value = '0';
+          break;
+      }
+      document.getElementById("resultValue").value = resultValue;
+    }
+
+    function inputInnerText(){
+      document.getElementById('dispSpan').innerText='<mark>innerText</mark>'
+    }
+    function inputInnerHTML(){
+      document.getElementById('dispSpan').innerHTML='<mark>innerText</mark>'
+    }
+
+  </script>
+</head>
+
+<body>
+  <button onclick="openAlert()">버튼클릭</button>
+  <button onclick="openSpanContentsChange()">span객체의 콘텐츠 지웠다</button>
+  <button onclick="openSpanContentsChange2()">span객체의 콘텐츠 사라졌다</button>
+  <p id="msgSpan">요소내용</p>
+
+  <!-- <label for="inputValue1">입력1</label><input type="text" value="0" id="inputValue1" ondblclick="calculateClear(id)"><br> -->
+  <label for="inputValue1">입력1</label><input type="text" value="0" id="inputValue1" ondblclick="calculate(id)"><br>
+  <label for="inputValue2">입력2</label><input type="text" value="0" id="inputValue2" ondblclick="calculate(id)"><br>
+  <label for="resultValue">결과값</label><input type="text" value="0" id="resultValue" ondblclick="calculate(id)"
+    readonly><br>
+
+  <input type="button" value="+" onclick="calculate(value)" id="calculate">
+  <input type="button" value="-" onclick="calculate(value)" id="calculate">
+  <input type="button" value="*" onclick="calculate(value)" id="calculate">
+  <input type="button" value="/" onclick="calculate(value)" id="calculate">
+  <input type="button" value="%" onclick="calculate(value)" id="calculate">
+  <input type="button" value="clear" onclick="calculate(value)" id="calculate">
+
+  <p id="dispSpan">innerText</p>
+  <input type="button" value="innertext" onclick="inputInnerText()">
+  <input type="button" value="innerHTML" onclick="inputInnerHTML()">
+</body>
+<!-- <script>
+  openAlert();
+</script> -->
+
+</html>
