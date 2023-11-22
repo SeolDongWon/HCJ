@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jsIF</title>
+  <script>
+    // for (let i = 1; i < 10; i++) {
+    //   for (let j = 1; j < 10; j++) {
+    //     window.document.write('<p>' + i + '*' + j + '=' + i * j + '</p>');
+    //   }
+    // }
+    // window.document.write('<br>');
+
+    // for (let i = 1; i < 10; i++) {
+    //   window.document.write('<div style="display:flex ">');
+    //   for (let j = 1; j < 10; j++) {
+    //     window.document.write('<span style="width:100px">' + j + '*' + i + '=' + i * j + '</span>');
+    //   }
+    //   window.document.write('</div>');
+    // }
+
+    window.document.write('<fieldset><legend>구구단</legend><table>');
+    for (let i = 0; i < 10; i++) {
+      window.document.write('<tr>');
+      for (let j = 1; j < 10; j++) {
+        if (i == 0) {
+          window.document.write('<td>' + j + '단' + '</td>')
+        } else {
+          window.document.write('<td>' + j + ' * ' + i + ' = ' + i * j + '</td>')
+        }
+      }
+      window.document.write('</tr>');
+    }
+    window.document.write('</table></fieldset>');
+  </script>
+
+  <style>
+    .box2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    fieldset {
+      display: flex;
+      justify-content: center;
+    }
+
+    legend {
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid black;
+      text-align: center;
+      
+    }
+  </style>
+  </script>
+</head>
+
+<body>
+  <h1>Hello JavaScript</h1>
+</body>
+
+</html>
