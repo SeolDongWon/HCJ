@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>95page</title>
+    <style>
+        .input_group {
+            height: 42px;
+            border-bottom: 1px dotted #ccc;
+            font: 1em/40px '돋움', 'Helvetica';
+        }
+
+        .input_group>label {
+            width: 80px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        function doSubmit() {
+            let frm = document.form1;
+
+            if (!frm.user_name.value) {
+                alert("이름을 입력해 주세요.");
+                frm.user_name.focus();
+                return false;
+            }
+            if (!frm.gender[0].checked && !frm.gender[1].checked) {
+                alert("성별을 선택해주세요.");
+                frm.gender[0].focus();
+                return false;
+            }
+            if (frm.job.selectedIndex < 1) {
+                alert("직업을 선택해 주세요.");
+                frm.job.focus();
+                return false;
+            }
+
+            let chk = false;
+            for (let i = 0;i< frm.hobby.length; i++) {
+                if (frm.hobby[i].checked) {
+                    chk = true;
+                    break;
+                }
+            }
+            if (!chk) {
+                alert("취미를 선택해 주세요.");
+                frm.hobby[0].focus();
+                return false;
+            }
+
+            if (confirm("입력한 내용이 맞나요")) {
+                frm.submit();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1" onsubmit="doSubmit(); return false;">
+        <fieldset>
+            <legend>회원가입</legend>
+            <div class="input_group first">
+                <label for="user_name">이름</label>
+                <input type="text" name="user_name" id="user_name"/>
+            </div>
+            <div class="input_group">
+                <label for="">성별</label>
+                <label for=""><input type="radio" name="gender" value="M">남자</label>
+                <label for=""><input type="radio" name="gender" value="W">여자</label>
+            </div>
+            <div class="input_group">
+                <label for="job">직업</label>
+                <select name="job" id="job">
+                    <option value="">----선택하세요----</option>
+                    <option value="dev">프로그래머</option>
+                    <option value="pub">퍼블리셔</option>
+                </select>
+            </div>
+            <div class="input_group">
+                <label for="">취미</label>
+                <label for=""><input type="checkbox" value="축구" name="hobby">축구</label>
+                <label for=""><input type="checkbox" value="농구" name="hobby">농구</label>
+                <label for=""><input type="checkbox" value="야구" name="hobby">야구</label>
+            </div>
+            <div class="input">
+                <label for="">&nbsp;</label>
+                <input type="submit" name="button" value="제출">
+                <input type="reset" name="button2" value="리셋">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
