@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkWindow</title>
+  <script>
+    function checkWindow(){
+      let agent = window.navigator.userAgent;
+
+      if(agent.indexOf("iPhone")>0||agent.indexOf("iPad")>0||agent.indexOf("Android")>0){
+        document.write('<p>모바일입니다.</p>');
+      }else{
+        document.write('<p>PC입니다.</p>');
+      
+      }
+    }
+  </script>
+</head>
+<body  onload="checkWindow()">
+</body>
+</html>

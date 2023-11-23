@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>string1</title>
+  <script>
+    // 기능을 확인하기 위한 문자열의 선언
+    let url = "http://WWW.naver.COM/";
+    document.write("<p>문자 열 : " + url + "</p>");
+
+    // 문자 수 리턴
+    document.write("<p>문자 길이 : " + url.length + "</p>")
+
+    // 해당 위치 문자 리턴
+    document.write("<p>2번째 문자 : " + url.charAt(2) + "</p>")
+
+    // 해당 문자가 나타나는 처음 위치 리턴
+    document.write("<p>'/'의 첫 위치: " + url.indexOf('/') + "</p>")
+
+    // 해당 문자가 나타나는 두번째 위치 리턴
+    document.write("<p>'/'의 두번째 위치: " + url.indexOf('/', url.indexOf('/') + 1) + "</p>")
+
+    // 해당 문자가 나타나는 마지막 위치 리턴
+    document.write("<p>'/'의 마지막 위치: " + url.lastIndexOf('/') + "</p>")
+
+    // 부분자르기
+    document.write("<p>해당 위치부터 끝까지 자르기: " + url.substring(10) + "</p>")
+
+    // 부분자르기
+    document.write("<p>해당 위치부터 일정부분 자르기: " + url.substring(10, 15) + "</p>")
+
+    // 대소문자
+    document.write("<p>대문자 변환: " + url.toUpperCase() + "</p>")
+
+    // 대소문자
+    document.write("<p>소문자 변환: " + url.toLowerCase() + "</p>")
+
+    // 두 수 사이의 난수를 리턴
+    function random(n1, n2) {
+      return parseInt(Math.random() * (n2 - n1 + 1) + n1);
+    }
+
+    //함수의 결과 확인
+    let num = random(0, 9);
+    document.write("<p>0~9사이의 난수:" + num + "</p>");
+
+    //함수의 응용 >> 5자리 인증번호 생성
+    let auth = "";
+    for (var i = 0; i < 5; i++) {
+      auth += random(0, 9);
+    }
+    document.write("<p>인증번호 : " + auth + "</p>");
+    let mydate = new Date();
+    document.write("<p>getTime : " + mydate.getTime() + "</p>");
+    document.write("<p>현재시간 : " + mydate.getFullYear() + "년 " + Number(mydate.getMonth()+1)+ "월 " + mydate.getDay() + "일 " 
+      + mydate.getHours()+"시 " + mydate.getMinutes()+"분 " + mydate.getSeconds()+"초 " + "</p>");
+    document.write("<p>getYear : " + mydate.getYear() + "</p>");
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>colorChange</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    div#box {
+      border: 1px solid black;
+      width: 300;
+    }
+
+    div.box1{
+      padding: 20px;
+      border-color: red;
+      background-color:blueviolet;
+      color: wheat;
+    }
+    div.box2{
+      padding: 5px;
+      background-color: blue;
+    }
+  </style>
+  <script>
+    function fontColor(_color) {
+      let divBox = document.getElementById("box");
+      divBox.style.color = _color;
+    }
+    function backgroundColor(_color) {
+      let divBox = document.getElementById("box");
+      divBox.style.background = _color;
+    }
+    function setWidth(_width) {
+      let divBox = document.getElementById("box");
+      divBox.style.width = _width;
+    }
+    function classChange(_class) {
+      let divBox = document.getElementById("box");
+      divBox.className = _class;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="box">
+      <h1>텍스트영역입니다</h1>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-start mt-5">
+        <button type="button" class="btn btn-primary" onclick="fontColor('#f00')">폰트빨강</button>
+        <button type="button" class="btn btn-secondary" onclick="fontColor('#0f0')">폰트노랑</button>
+        <button type="button" class="btn btn-info" onclick="fontColor('#00f')">폰트검정</button>
+        <button type="button" class="btn btn-danger"onclick="backgroundColor('#f00')">배경빨강</button>
+        <button type="button" class="btn btn-warning"onclick="backgroundColor('#0f0')">배경노랑</button>
+        <button type="button" class="btn btn-success"onclick="backgroundColor('#00f')">배경초록</button>
+        <button type="button" class="btn btn-dark"onclick="setWidth('50%')">여백50%</button>
+        <button type="button" class="btn btn-dark"onclick="setWidth('auto')">여백자동</button>
+        <button type="button" class="btn btn-dark"onclick="classChange('box1')">스타일1</button>
+        <button type="button" class="btn btn-dark"onclick="classChange('box2')">스타일2</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

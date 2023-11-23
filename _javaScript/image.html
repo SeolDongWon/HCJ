@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image</title>
+</head>
+<style>
+  .container {
+    display: flex;
+  }
+
+  .thumbnail {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 120px;
+  }
+
+  .thumbnail li{
+
+    padding: 5px 10px;
+  }
+
+  .thumbnail img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .view img {
+    width: 500px;
+    height: 320px;
+    padding: 5px 0;
+  }
+</style>
+<script>
+  function setImage(index) {
+
+    let image_list = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg'];
+    let image = document.getElementById("target");
+
+    image.src = image_list[index];
+
+  }
+  function outImage() {
+    let image = document.getElementById("target");
+    image.src = "img/noimage.png";
+  }
+
+</script>
+
+<body>
+  <div class="container">
+    <ul class="thumbnail">
+      <!-- <li>
+        <a href="#" onclick="setImage(0)"><img src="img/1.jpg" alt=""></a>
+      </li>
+      <li>
+        <a href="#" onclick="setImage(1)"><img src="img/2.jpg" alt=""></a>
+      </li>
+      <li>
+        <a href="#" onclick="setImage(2)"><img src="img/3.jpg" alt=""></a>
+      </li> -->
+      <li>
+        <a href="#" onmouseover="setImage(0)" onmouseout="outImage()"><img src="img/1.jpg" alt=""></a>
+      </li>
+      <li>
+        <a href="#" onmouseover="setImage(1)" onmouseout="outImage()"><img src="img/2.jpg" alt=""></a>
+      </li>
+      <li>
+        <a href="#" onmouseover="setImage(2)" onmouseout="outImage()"><img src="img/3.jpg" alt=""></a>
+      </li>
+    </ul>
+    <div class="view">
+      <img src="img/1.jpg" id="target">
+    </div>
+  </div>
+</body>
+
+</html>
