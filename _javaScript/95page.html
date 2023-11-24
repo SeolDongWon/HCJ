@@ -21,50 +21,76 @@
         function doSubmit() {
             let frm = document.form1;
 
-            if (!frm.user_name.value) {
+            var reg = /^[가-힣]{2,4}$/;
+            if (!reg.test(frm.user_name.value)) {
                 alert("이름을 입력해 주세요.");
+                frm.user_name='';
                 frm.user_name.focus();
                 return false;
             }
-            if (!frm.gender[0].checked && !frm.gender[1].checked) {
-                alert("성별을 선택해주세요.");
-                frm.gender[0].focus();
-                return false;
-            }
-            if (frm.job.selectedIndex < 1) {
-                alert("직업을 선택해 주세요.");
-                frm.job.focus();
+            //아이디검색
+            var regID=/^[a-zA-Z][0-9a-zA-Z]{4,7}$/;
+            if (!regID.test(frm.user_id.value)) {
+                alert("아이디를 입력해 주세요.");
+                frm.user_id='';
+                frm.user_id.focus();
                 return false;
             }
 
-            let chk = false;
-            for (let i = 0;i< frm.hobby.length; i++) {
-                if (frm.hobby[i].checked) {
-                    chk = true;
-                    break;
-                }
-            }
-            if (!chk) {
-                alert("취미를 선택해 주세요.");
-                frm.hobby[0].focus();
-                return false;
-            }
+            // if (!frm.gender[0].checked && !frm.gender[1].checked) {
+            //     alert("성별을 선택해주세요.");
+            //     frm.gender[0].focus();
+            //     return false;
+            // }
+            // if (frm.job.selectedIndex < 1) {
+            //     alert("직업을 선택해 주세요.");
+            //     frm.job.focus();
+            //     return false;
+            // }
+
+            // let chk = false;
+            // for (let i = 0; i < frm.hobby.length; i++) {
+            //     if (frm.hobby[i].checked) {
+            //         chk = true;
+            //         break;
+            //     }
+            // }
+            // if (!chk) {
+            //     alert("취미를 선택해 주세요.");
+            //     frm.hobby[0].focus();
+            //     return false;
+            // }
 
             if (confirm("입력한 내용이 맞나요")) {
                 frm.submit();
             }
+
         }
+
+        function printform() {
+            //   document.write(frm.user_name.value);
+            let url = new URLSearchParams(location.search);
+            // document.getElementById("id_Name").innerHTML = url;
+            document.getElementById("id_Name").innerHTML = url.get('user_name');
+        }
+
+
     </script>
 </head>
 
-<body>
-    <form name="form1" onsubmit="doSubmit(); return false;">
+<body onload="printform()">
+    <form name="form1" onsubmit="doSubmit(); return false; printform() ">
         <fieldset>
             <legend>회원가입</legend>
             <div class="input_group first">
                 <label for="user_name">이름</label>
-                <input type="text" name="user_name" id="user_name"/>
+                <input type="text" name="user_name" id="user_name" />
             </div>
+            <div class="input_group">
+                <label for="user_id">아이디</label>
+                <input type="text" name="user_id" id="user_id" placeholder="5~8영문+숫자 첫글자는 영문" />
+            </div>
+
             <div class="input_group">
                 <label for="">성별</label>
                 <label for=""><input type="radio" name="gender" value="M">남자</label>
@@ -88,8 +114,10 @@
                 <label for="">&nbsp;</label>
                 <input type="submit" name="button" value="제출">
                 <input type="reset" name="button2" value="리셋">
+                <input type="submit" name="button3" value="새로고침">
             </div>
         </fieldset>
+        <!-- <p id="id_Name">디폴트</p> -->
     </form>
 
 </body>

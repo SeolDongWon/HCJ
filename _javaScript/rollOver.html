@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rollOver</title>
+  <script>
+    function mouseover(id){
+      document.getElementById(id).src = "img/"+id+"_on.jpg";
+    }
+    function mouseout(id){
+      document.getElementById(id).src = "img/"+id+".jpg";
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="button" style="display: flex;">
+      <img src="img/jquery.jpg" alt="" id="jquery" onmouseover="mouseover(id)" onmouseout="mouseout(id)">
+      <img src="img/css.jpg" alt="" id="css" onmouseover="mouseover(id)" onmouseout="mouseout(id)">
+      <img src="img/javascript.jpg" alt="" id="javascript" onmouseover="mouseover(id)" onmouseout="mouseout(id)">
+      <img src="img/html.jpg" alt="" id="html" onmouseover="mouseover(id)" onmouseout="mouseout(id)">
+    </div>
+  </div>
+</body>
+</html>
