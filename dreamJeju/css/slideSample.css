@@ -1,0 +1,27 @@
+#container { 
+  transition: .3s ease-out;
+}
+
+#title1 {
+  color: red;
+  cursor: pointer;
+  /* transition: .3s ease-out; */
+  /* transition: display 0.3s, opacity 0.3s; */
+  /* opacity: 0; */
+}
+#title2 {
+  color: blue;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+
+.remove {
+  /* visibility: hidden; */
+  display: none;
+  opacity: 0;
+}
+.hide {
+  transition: opacity 0.3s, display 0.3s;
+  opacity: 0;
+  display: none;
+}

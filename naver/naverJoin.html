@@ -22,7 +22,7 @@
         <span id="containerHight">hight=</span>
     </div>
     <div id="container" class="w-100">
-        <div id="inner" class="bg-light">
+        <div id="inner">
             <div id="logoDiv">
                 <h1 id="logo">NAVER</h1>
             </div>
@@ -119,19 +119,27 @@
                                 <input type="text" value="" name="inputTel" id="inputTel" placeholder="휴대전화번호"
                                     onfocus="inputFocusDv(id)" onblur="telCheck(id)">
                             </div>
-                            <div id="allConfim"style = "display: none;">
-                                <span>[필수]인증 약관 전체동의</span>
-                            </div>
+
                         </div>
+                    </div>
+                    <div id="allConfimDiv" class="allConfimDiv G" style="display: none;">
+                        <label for="allConfim"><i id="allConfimCheck" class="fa-regular fa-circle-check"
+                                style="color: #b8b8b8;"></i>
+                            <span id="fontGreen">[필수]</span>
+                            <span>인증 약관 전체 동의</span>
+                        </label>
+                        <input type="checkbox" value="allConfim" id="allConfim" onclick="allConfimcheck()"
+                            style="display: none;">
                     </div>
                     <div id="errorBox">
                         <div class="error" id="inputNameError"></div>
-                        <div class="error" id="inputBirthError" style=""></div>
+                        <div class="error" id="inputBirthError"></div>
                         <div class="error" id="inputGenderError"></div>
                         <div class="error" id="inputTelError"></div>
+                        <div class="error" id="allConfimError"></div>
                     </div>
                     <div id="submitDiv">
-                        <input type="submit" name="button" id="submit" value="제출">
+                        <input type="submit" name="button" id="submit" value="인증요청">
                     </div>
                 </form>
             </div>

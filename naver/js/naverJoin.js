@@ -8,9 +8,15 @@ function doSubmit() {
     birthCheck();
     genderCheck();
     telCheck();
-    if (!idCheck() || !pwCheck() || !emailCheck() || !nameCheck() || !birthCheck() || !genderCheck() || !telCheck()) {
+    if (document.getElementById('realName').checked) {
+        allConfimcheck();
+    }
+
+
+    if (!idCheck() || !pwCheck() || !emailCheck() || !nameCheck() || !birthCheck() || !genderCheck() || !telCheck() || !allConfimcheck()) {
         flag = false;
     }
+
     if (flag) {
         if (confirm("입력한 내용이 맞나요")) {
             frm.submit();
@@ -53,19 +59,19 @@ function inputFocusDv(id) {
 
 function idCheck() {
     let frm = document.form1;
-    document.getElementById("inputIdTr").style = "";
-    document.getElementById('inputIdError').innerHTML = "";
-    document.getElementById("inputIdTr").className = "input R";
+    // document.getElementById("inputIdTr").style = "";
+    // document.getElementById('inputIdError').innerHTML = "";
+    // document.getElementById("inputIdTr").className = "input R";
     let regID = /^[a-z0-9_-]{4,19}$/;
-    if (frm.inputId.value === '') {
-        document.getElementById('inputIdError').innerHTML = "*아이디:필수정보입니다.";
-        return false;
-    } else if (!regID.test(frm.inputId.value)) {
+    // if (frm.inputId.value === '') {
+        // document.getElementById('inputIdError').innerHTML = "*아이디:필수정보입니다.";
+        // return false;
+    // } else 
+    if (!regID.test(frm.inputId.value)) {
         document.getElementById('inputIdError').innerHTML = "*아이디:5~20자의 영문 소문자, 숫자와 특수기호(_)(-)만 사용 가능합니다.";
         return false;
     } else {
         document.getElementById("inputIdTr").className = "input";
-
         return true;
     }
 }
@@ -173,7 +179,7 @@ function telCheck() {
     document.getElementById("inputTelDiv").style = "";
     document.getElementById('inputTelError').innerHTML = "";
     document.getElementById("inputTelDiv").className = "input R";
-    let regTel = /^[0-9]{3}[0-9]{3,4}[0-9]{4}$/;
+    let regTel = /^(01[0-9]{1})[0-9]{3,4}[0-9]{4}$/;
     if (frm.inputTel.value === '') {
         document.getElementById('inputTelError').innerHTML = "*휴대전화번호:필수정보입니다.";
         return false;
@@ -211,12 +217,28 @@ function genderCheck() {
 
 function realNameMenuOn() {
     document.getElementById('selectTelCompanyDiv').style = "";
-    document.getElementById('allConfim').style = "";
+    document.getElementById('allConfimDiv').style = "";
     document.getElementById('inputGlobalTelDiv').style = "display: none;";
 }
 
 function realNameMenuOff() {
     document.getElementById('selectTelCompanyDiv').style = "display: none;";
-    document.getElementById('allConfim').style = "display: none;";
+    document.getElementById('allConfimDiv').style = "display: none;";
+    document.getElementById('allConfimError').innerHTML = "";
     document.getElementById('inputGlobalTelDiv').style = "";
+}
+
+
+function allConfimcheck() {
+    if (document.getElementById('allConfim').checked) {
+        document.getElementById('allConfimCheck').style = "color: #00ff04;";
+        document.getElementById('allConfimDiv').className = "allConfimDiv G";
+        document.getElementById('allConfimError').innerHTML = "";
+        return true;
+    } else {
+        document.getElementById('allConfimCheck').style = "color: #ff0000;";
+        document.getElementById('allConfimDiv').className = "allConfimDiv R";
+        document.getElementById('allConfimError').innerHTML = "필수 약관에 모두 동의해 주세요.";
+        return false;
+    }
 }

@@ -1,7 +1,8 @@
 #container {
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 #logo {
@@ -10,18 +11,19 @@
 }
 
 form {
-    color: rgb(201, 201, 201);
+    color: rgb(177, 176, 176);
 }
 
-td{
+td {
     padding: 5px;
 }
-form>div>div>div{
+
+form>div>div>div {
     padding: 5px;
 }
 
 #idPwEmailTable {
-    border: 2px solid rgb(230, 230, 230);
+    border: 2px solid  rgb(177, 176, 176);;
 }
 
 #idPwEmailTable tr {
@@ -71,7 +73,7 @@ input:focus {
 }
 
 #nameBirthTelDiv {
-    border: 2px solid rgb(230, 230, 230);
+    border: 2px solid  rgb(177, 176, 176);;
     background-color: white;
 }
 
@@ -96,6 +98,7 @@ div.input.R>div>label {
     color: red;
     text-decoration: underline;
 }
+
 div.input.R>div>label,
 div.input.R,
 tr.input.R {
@@ -107,6 +110,8 @@ tr.input.R {
 #submit {
     background-color: rgb(26, 187, 26);
     color: white;
+    margin-top: 50px;
+    padding: 10px;
 }
 
 #inputGenderDiv {
@@ -118,20 +123,38 @@ tr.input.R {
 
 #inputGenderDiv>div {
     width: 100%;
-    border: 2px solid rgb(230, 230, 230);
+    border: 2px solid  rgb(177, 176, 176);
 }
 
 #inputGenderDiv>div>input {
     display: none;
 }
+
 #inputGenderDiv>div>label {
     width: 100%;
     height: 100%;
 }
-#inputglobalTel{
+
+#inputglobalTel {
     width: 100%;
 }
 
-#submit{
-    margin-top: 50px;
+#allConfimDiv.G{
+    color: black;
+    border: 2px solid  rgb(177, 176, 176);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div.allConfimDiv.R{
+    color: black;
+    border: 2px solid red;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+#fontGreen {
+    color: rgb(26, 187, 26);
+    ;
 }
