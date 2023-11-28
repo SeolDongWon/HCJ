@@ -184,7 +184,7 @@ button:focus{
 /* 탭메뉴 */
 #tabMenu {
   float: left;
-  width: 600px;
+  width: 550px;
   height: 100%;
   margin-top: 10px;
 }
