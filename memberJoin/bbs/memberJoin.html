@@ -11,12 +11,12 @@
     <!-- javaScript -->
     <script src="../js/memberJoin.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="css/memberJoin.css">
+    <link rel="stylesheet" href="../css/memberJoin.css">
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/3096a27d00.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="sizeChange()" onresize="sizeChange()">
+<body>
     <div id="container" class="w-100">
         <div id="inner">
             <div id="formD">
@@ -25,13 +25,14 @@
                         <table id="idPwEmailTable">
                             <tr id="inputIdTr" class="input">
                                 <td><i class="icon fa-regular fa-user"></i></td>
-                                <td><input type="text" value="" name="inputId" id="inputId" placeholder="아이디"
-                                        onfocus="inputFocusTb(id)" onblur="idCheck(id)"></td>
+                                    <td><input type="text" value="" name="inputId" id="inputId" placeholder="아이디"
+                                            onfocus="inputFocusTb(id)" onblur="idCheck(id)"></td>
+                                    <td> <a href="#" class="idOverlapCheck n" id="idOverlapCheck" onclick="idOverlapCheck()">중복체크</a></td>
                             </tr>
                             <tr id="inputPwTr">
                                 <td><i class="icon fa-solid fa-lock"></i></td>
-                                <td><input class="input" type="password" value=""name="inputPw" id="inputPw" placeholder="비밀번호"
-                                        onfocus="inputFocusTb(id)" onblur="pwCheck(id)"></td>
+                                <td><input class="input" type="password" value="" name="inputPw" id="inputPw"
+                                        placeholder="비밀번호" onfocus="inputFocusTb(id)" onblur="pwCheck(id)"></td>
                                 <td><span class="error" id="pwNo"></span></td>
                                 <td class="rightEnd" id="pwEye"><i class="icon fa-solid fa-eye" onclick="pwView()"></i>
                                 </td>

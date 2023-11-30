@@ -16,12 +16,19 @@ function doSubmit() {
         }
     }
 }
+function idOverlapCheck(){
+    let frm = document.form1;
+    
+    window.open('idOverlapCheck.html?id='+frm.inputId.value);
+}
+
 
 function idCheck() {
     let frm = document.form1;
     document.getElementById("inputIdTr").style = "";
     document.getElementById('inputIdError').innerHTML = "";
     document.getElementById("inputIdTr").className = "input R";
+    document.getElementById("idOverlapCheck").className = "idOverlapCheck n";
     let regID = /^[a-z0-9_-]{4,19}$/;
     if (frm.inputId.value === '') {
         document.getElementById('inputIdError').innerHTML = "*아이디:필수정보입니다.";
@@ -31,6 +38,7 @@ function idCheck() {
         return false;
     } else {
         document.getElementById("inputIdTr").className = "input";
+        document.getElementById("idOverlapCheck").className = "btn btn-success idOverlapCheck";
         return true;
     }
 }

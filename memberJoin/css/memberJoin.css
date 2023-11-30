@@ -99,3 +99,7 @@ tr.input.R {
     margin-top: 20px;
     padding: 10px;
 }
+
+.idOverlapCheck.n{
+    display: none;
+}
