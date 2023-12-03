@@ -18,9 +18,10 @@ function doSubmit() {
 }
 function idOverlapCheck(){
     let frm = document.form1;
-    
-    window.open('idOverlapCheck.html?id='+frm.inputId.value);
+    var options = 'width=200, height=50';
+    window.open('idOverlapCheck.html?id='+frm.inputId.value,'check',options);
 }
+
 
 
 function idCheck() {
@@ -38,7 +39,7 @@ function idCheck() {
         return false;
     } else {
         document.getElementById("inputIdTr").className = "input";
-        document.getElementById("idOverlapCheck").className = "btn btn-success idOverlapCheck";
+        document.getElementById("idOverlapCheck").stle = "btn btn-success idOverlapCheck";
         return true;
     }
 }
