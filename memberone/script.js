@@ -1,10 +1,13 @@
-function idCheck(id){
-  console.log(idCheck);
-  if(id==""){
-    alert("아이디를 입력해 주세요.");
-    document.regForm.id.forus();
-  }else{
-    url="idCheck.jsp?id="+id;
-    window.open(url,"post","width=300,height=150");
+function sizeChange() {
+  let containDiv = document.getElementById('container');
+  document.getElementById('containerWidth').innerHTML =
+      '<h1>width : ' + containDiv.clientWidth + '</h1>';
+  document.getElementById('containerHight').innerHTML =
+      '<h1>hight : ' + containDiv.clientHeight + '</h1>';
+
+  if (containDiv.clientWidth < 768) {
+      document.getElementById('inner').style = "width:100%;";
+  } else {
+      document.getElementById('inner').style = "width: 500px;";
   }
 }

@@ -46,8 +46,10 @@ li#li_login{
   padding: 14px 20px;
 }
 
-
 .dropdown:hover .dropdown-content{
+  display: block;
+}
+.dropdown:active .dropdown-content{
   display: block;
 }
 .dropdown-content>a:hover{

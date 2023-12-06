@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>seolProject</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/3096a27d00.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/webSite.css">
+  <script src="sp_script.js"></script>
+</head>
+
+<body onload="screanCheck();" onresize="screanCheck();">
+  <p id="w">33</p>
+  <p id="h">33</p>
+  <div class="screenSize">
+    <span id="containerWidth">width=</span>
+    <span id="containerHight">hight=</span>
+  </div>
+  <!-- container -->
+  <div  class="container-fluid">
+    <!-- header -->
+    <div id="container" class="header container">
+      <!-- <div class="container"> -->
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/paris.jpg" alt="log" style="width:40px;" class="rounded-pill">
+              <a class="navbar-brand" href="#">seolProject</a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 200px;">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-around">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    menu1
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">menu1-1</a></li>
+                    <li><a class="dropdown-item" href="#">menu1-2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    menu2
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">menu2-1</a></li>
+                    <li><a class="dropdown-item" href="#">menu2-2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">menu3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">menu4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- </div> -->
+    </div>
+    <!-- content -->
+    <div class="content">
+      <div class="container p-0">
+        <!-- Carousel -->
+        <div class="container">
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="img/photo-1.jpg" alt="sea" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="img/photo-2.jpg" alt="flower" class="d-block" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="img/photo-3.jpg" alt="rock" class="d-block" style="width:100%">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <!-- <span class="carousel-control-prev-icon"></span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <!-- tabMenu & quickLink -->
+        <div class="container-fluid mt-3">
+          <div class="row">
+            <!-- tabMenu -->
+            <div  id="maintab1" class="col-sm-7 p-2 border border-danger">
+              <ul class="nav nav-tabs  " role="tablist">
+                <li class="nav-item">
+                  <label for="notice" name="notice"><a href="#notice" class="nav-link text-dark active" data-bs-toggle="tab">aliquam voluptates</a></label>
+                </li>
+              </ul>
+              <div class="tab-content border border-danger-subtle">
+                <div class="container tab-pane active" id="notice">
+                  <ul>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Cum libero accusamus placeat aliquam voluptates,</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Illum laborum earum illo natus cumque d</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Dolorum error soluta saepe. Nulla </a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Atque eveniet ratione nemo iste, dolo</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Rerum eveniet voluptas distinctio dolores harum,</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- quickLink -->
+            <div id="maintab2" class="col-sm-5 pt-1  border border-info">
+              <p>dfdf</p>
+              <div class="screenSize border border-danger ">
+                <span id="maintab2Width">width=</span>
+                <span id="maintab2Hight">hight=</span>
+              </div>
+              <div class="tab-content border border-danger-subtle">
+                <div class="container tab-pane active" id="notice">
+                  <ul>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Cum libero accusamus placeat aliquam voluptates,</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Illum laborum earum illo natus cumque d</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Dolorum error soluta saepe. Nulla </a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Atque eveniet ratione nemo iste, dolo</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Rerum eveniet voluptas distinctio dolores harum,</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class=" container ">
+        <div class="btn-group btn-group-sm">
+          <button type="button" class="btn  btn-light">회사소개</button>
+          <button type="button" class="btn  btn-light">개인정보처리방침</button>
+          <button type="button" class="btn  btn-light">여행약관</button>
+          <button type="button" class="btn  btn-light">사이트맵</button>
+        </div>
+      </div>
+      <div class="container ">
+        <span>회사 정보 적는 부분</span>
+        <div class="contentLink float-end">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #005eff;"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #ff61ea;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
