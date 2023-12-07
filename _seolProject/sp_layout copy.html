@@ -11,78 +11,120 @@
 </head>
 
 <body>
-  <div class="container" style="margin: 0 auto;">
+  <div class="container-sm" id="container">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;"> -->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <nav class="container-sm navbar navbar-expand-lg bg-light">
+        <div class="container-sm p-0" style="position: relative; border: 1px dotted red;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 200px;"> -->
-            <!-- <ul class="navbar-nav"> -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 container d-flex justify-content-around border border-1 border-danger">
-              <li class="nav-item dropdown justify-content-start border border-1 border-danger-subtle" style="position: relative;">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link1
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="position: absolute;left:100px;">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+          <a class="navbar-brand" href="#" style="border: 1px solid red;">seolProject</a>
+          <div>
+            &nbsp;
+          </div>
+          <div class="collapse navbar-collapse" style="border: 1px dotted;"
+            id="navbarTogglerDemo03">
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex container justify-content-around"> -->
+            <ul class="navbar-nav d-flex container justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">메인페이지</a>
               </li>
-              <li class="nav-item dropdown justify-content-start"">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link2
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  menu1
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown justify-content-start"">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link3
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown justify-content-start"">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link4
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">menu1-1</a></li>
+                  <li><a class="dropdown-item" href="#">menu1-2</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
             </ul>
           </div>
-        </div>
+         
+          <div class="d-flex" role="search" class="navbar-toggler d-flex" style="position: absolute; right: 0; top: 0;">
+            <button class="btn btn-outline-success" type="submit">
+              로그인
+            </button>
+          </div>
       </nav>
     </header>
-    <nav>
-
-    </nav>
     <aside>
-
     </aside>
     <section>
-      <article>
-
+      <article class="border border-danger mt-3 row ">
+        <div class="col-sm-8 border border-info">
+          <ul class="nav nav-tabs  " role="tablist">
+            <li class="nav-item">
+              <label for="notice" name="notice"><a href="#notice" class="nav-link text-dark active" data-bs-toggle="tab">공지사항</a></label><input type="radio" id="tabMenu" name="">
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link text-dark" data-bs-toggle="tab">갤러리</a>
+            </li>
+          </ul>
+          <div class="tab-content border border-danger">
+            <div class="container tab-pane active" id="notice">
+              <ul>
+                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">사무실을 이전했습니다</a></li>
+                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">[참가 모집] 카약 체험에 초대합니다.</a></li>
+                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">[참가 모집] 여름 방학 기간, 오름 체험단을
+                    모집합니다.</a></li>
+                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">겨울, 추천 여행지</a></li>
+                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">가을, 추천 여행지</a></li>
+              </ul>
+            </div>
+            <div class="container tab-pane" id="gallery">
+              <table class="table">
+                <thead>
+                  <tr class="table-secondary">
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 pt-5  border border-danger">
+          <div class="row gap-0 pt-2  border border-primary">
+            <div class="col-sm-4 pt-2 text-center border border-danger">
+              <img src="img/icon-1.jpg" class="rounded-circle " alt="Cinque Terre" width="100">
+              <a href="#" class="text-dark text-decoration-none btn  btn-light">평화기행</a>
+            </div>
+            <div class="col-sm-4 pt-2  text-center border border-danger">
+              <img src="img/icon-2.jpg" class="rounded-circle" alt="Cinque Terre" width="100">
+              <a href="#" class="text-dark text-decoration-none btn  btn-light">힐링 워크샵</a>
+            </div>
+            <div class="col-sm-4 pt-2  text-center border border-danger">
+              <img src="img/icon-3.jpg" class="rounded-circle" alt="Cinque Terre" width="100">
+              <a href="#" class="text-dark text-decoration-none btn  btn-light">문의하기</a>
+            </div>
+          </div>
+        </div>
       </article>
     </section>
     <footer>
