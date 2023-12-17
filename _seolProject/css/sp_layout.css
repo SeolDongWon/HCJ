@@ -1,38 +1,100 @@
 body {
   margin: 0px;
   padding: 5px;
+  border: 2px dotted black;
+}
+body>div{
+  border: 2px dotted red;
 }
 
+li{
+  list-style-type: none;
+  padding: 5px;
+  border: 1px dotted red;
+}
+a{
+  text-decoration: none;
+}
+
+a.navbar-brand {
+  /* border: 1px solid red; */
+}
+
+header>nav>div {
+  /* border: 2px dotted red; */
+}
+
+header>nav>div>div {
+  /* border: 1px dotted; */
+}
+
+
+main{
+  /* width: 100%; */
+  /* padding: 0px; */
+  /* margin: 0px; */
+  border: 2px dotted blue;
+  display: flex;
+}
+section{
+  /* display:block; */
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 2px dotted red;
+}
+
+aside{
+  width: 200px;
+  /* display: block; */
+  border: 2px dotted red;
+}
+
+article{
+  border: 2px dotted red;
+}
+
+section>article>div {
+ border: 2px dotted blue;
+}
+section>article>div>div {
+  border: 2px dotted red;
+}
+ 
+section{
+  /* display: flex; */
+}
 div {
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   color: black;
 }
-div#container{
+
+div#container {
   /* background-color: red; */
   /* padding: 0px; */
 }
 
 header {
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 nav {
-  border: 1px dotted blue;
+  /* border: 1px dotted blue; */
 }
 
 aside {
-  border: 1px dotted green
+  /* border: 1px dotted green */
 }
 
 section {
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
 }
 
 footer {
-  border: 1px dotted blue;
+  /* border: 1px dotted blue; */
 }
 
 .container {
   /* border: 1px solid black; */
-  
+
 }
