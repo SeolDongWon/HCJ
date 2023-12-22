@@ -110,16 +110,19 @@
             <div class="tab-pane active" id="notice">
               <h2 class="text-center"><a href="#notice" class="nav-link text-dark">공지사항</a></h2>
               <ul class="p-2">
-                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Cum libero accusamus placeat
-                    aliquam
-                    voluptates,</a></li>
-                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Illum laborum earum illo natus
+                <li>
+                  <a href="#" class="textSkip text-light text-decoration-none btn  btn-primary">
+                      Cum libero accusamus placea taliquam voluptatesum libero accusamus placea taliquam voluptate
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="textSkip text-dark text-decoration-none btn  btn-light">Illum laborum earum illo natus
                     cumque d</a></li>
-                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Dolorum error soluta saepe. Nulla
+                <li><a href="#" class="textSkip text-dark text-decoration-none btn  btn-light">Dolorum error soluta saepe. Nulla
                   </a></li>
-                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Atque eveniet ratione nemo iste,
+                <li><a href="#" class="textSkip text-dark text-decoration-none btn  btn-light">Atque eveniet ratione nemo iste,
                     dolo</a></li>
-                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Rerum eveniet voluptas distinctio
+                <li><a href="#" class="textSkip text-dark text-decoration-none btn  btn-light">Rerum eveniet voluptas distinctio
                     dolores harum,</a></li>
               </ul>
             </div>
@@ -161,5 +164,42 @@
     </footer>
   </div>
 </body>
+<style>
+  .textSkip{
+    color: black;
+  }
+</style>
 
+<!-- <script>
+  function screanCheck() {
+    document.getElementById('w').innerHTML = "<h1>화면 너비 : " + window.outerWidth + "</h1>";
+    document.getElementById('h').innerHTML = "<h1>화면 높이 : " + window.outerHeight + "</h1>";
+
+    let containDiv = document.getElementById('bodyContainer');
+    document.getElementById('containerWidth').innerHTML =
+        '<h1>containerWidth : ' + containDiv.clientWidth + '</h1>';
+    document.getElementById('containerHight').innerHTML =
+        '<h1>containerHight : ' + containDiv.clientHeight + '</h1>';
+
+    let maintab2Div = document.getElementById('maintab2');
+    document.getElementById('maintab2Width').innerHTML =
+        '<h1>maintab2Width : ' + maintab2Div.clientWidth + '</h1>';
+    document.getElementById('maintab2Hight').innerHTML =
+        '<h1>maintab2Hight : ' + maintab2Div.clientHeight + '</h1>';
+
+    if (containDiv.clientWidth < 1140) {
+        document.getElementById('aside').style.display = "none";
+    } else {
+        document.getElementById('aside').style.display = "";
+    }
+
+    if (containDiv.clientWidth < 740) {
+        document.getElementById('maintab1').style.width = "100%";
+        document.getElementById('maintab2').style.width = "100%";
+    } else {
+        document.getElementById('maintab1').style.width = "";
+        document.getElementById('maintab2').style.width = "";
+    }
+}
+</script> -->
 </html>
