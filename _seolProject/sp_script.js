@@ -1,4 +1,4 @@
-function screanCheck() {
+function screenCheck() {
     document.getElementById('w').innerHTML = "<h1>화면 너비 : " + window.outerWidth + "</h1>";
     document.getElementById('h').innerHTML = "<h1>화면 높이 : " + window.outerHeight + "</h1>";
 
