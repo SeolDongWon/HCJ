@@ -8,10 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/sp_layout.css">
-  <script src="sp_script.js"></script>
+  <!-- <script src="sp_script.js"></script> -->
 </head>
 
-<body onload="screanCheck();" onresize="screanCheck();">
+<body>
   <div class="add">
     <p id="w">33</p>
     <p id="h">33</p>
@@ -105,10 +105,11 @@
           asd
         </div>
         <!-- 콘텐츠 시작 -->
-        <article class="container-md p-1 row ms-0">
+        <article class="container-md p-1 row ms-0 bg-light">
           <div id="maintab1" class="col-sm-6 p-1">
             <div class="tab-pane active" id="notice">
               <h2 class="text-center"><a href="#notice" class="nav-link text-dark">공지사항</a></h2>
+<<<<<<< HEAD:_seolProject/sp_layout copy.html
               <ul class="p-2">
                 <li>
                   <a href="#" class="textSkip text-light text-decoration-none btn  btn-primary">
@@ -117,6 +118,13 @@
                 </li>
                 <li>
                   <a href="#" class="textSkip text-dark text-decoration-none btn  btn-light">Illum laborum earum illo natus
+=======
+              <ul class="p-2 ">
+                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Cum libero accusamus placeat
+                    aliquam
+                    voluptates,</a></li>
+                <li><a href="#" class="text-dark text-decoration-none btn  btn-light">Illum laborum earum illo natus
+>>>>>>> b2084d10c6d6fab94a8bfb0f3203c43595fc99b1:_seolProject/pageForm.html
                     cumque d</a></li>
                 <li><a href="#" class="textSkip text-dark text-decoration-none btn  btn-light">Dolorum error soluta saepe. Nulla
                   </a></li>
@@ -164,11 +172,49 @@
     </footer>
   </div>
 </body>
+<<<<<<< HEAD:_seolProject/sp_layout copy.html
 <style>
   .textSkip{
     color: black;
   }
 </style>
+=======
+<script>
+  //  onload="screenCheck();" onresize="screenCheck();"
+// document.body.onload=screenCheck();
+// document.body.onresize=screenCheck();
+window.onresize =screenCheck;
+window.onload = screenCheck;
+function screenCheck() {
+    document.getElementById('w').innerHTML = "<h1>화면 너비 : " + window.outerWidth + "</h1>";
+    document.getElementById('h').innerHTML = "<h1>화면 높이 : " + window.outerHeight + "</h1>";
+
+    let containDiv = document.getElementById('bodyContainer');
+    document.getElementById('containerWidth').innerHTML ='<h1>containerWidth : ' + containDiv.clientWidth + '</h1>';
+    document.getElementById('containerHight').innerHTML ='<h1>containerHight : ' + containDiv.clientHeight + '</h1>';
+
+    // let maintab2Div = document.getElementById('maintab2');
+    // document.getElementById('maintab2Width').innerHTML ='<h1>maintab2Width : ' + maintab2Div.clientWidth + '</h1>';
+    // document.getElementById('maintab2Hight').innerHTML ='<h1>maintab2Hight : ' + maintab2Div.clientHeight + '</h1>';
+
+    if (containDiv.clientWidth < 1140) {
+        document.getElementById('aside').style.display = "none";
+    } else {
+        document.getElementById('aside').style.display = "";
+    }
+
+    if (containDiv.clientWidth < 740) {
+        document.getElementById('maintab1').style.width = "100%";
+        document.getElementById('maintab2').style.width = "100%";
+    } else {
+        document.getElementById('maintab1').style.width = "";
+        document.getElementById('maintab2').style.width = "";
+    }
+}
+
+
+</script>
+>>>>>>> b2084d10c6d6fab94a8bfb0f3203c43595fc99b1:_seolProject/pageForm.html
 
 <!-- <script>
   function screanCheck() {

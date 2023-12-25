@@ -1,53 +1,92 @@
 body {
   margin: 0px;
+<<<<<<< HEAD
   padding: 5px;
   border: 2px dotted black;
   color: black;
+=======
+  /* padding: 5px; */
+  /* border: 2px dotted black; */
+>>>>>>> b2084d10c6d6fab94a8bfb0f3203c43595fc99b1
 }
 body>div{
+  /* border: 2px dotted red; */
+}
+body>div#bodyContainer{
   border: 2px dotted red;
+  padding: 0px;
 }
 
 li{
   list-style-type: none;
   padding: 5px;
+<<<<<<< HEAD
   border: 1px dotted red;
   
+=======
+  /* border: 1px dotted red; */
+>>>>>>> b2084d10c6d6fab94a8bfb0f3203c43595fc99b1
 }
 a{
   text-decoration: none;
 }
 
 main{
+<<<<<<< HEAD
   border: 2px dotted blue;
+=======
+  /* width: 100%; */
+  /* padding: 0px; */
+  /* margin: 0px; */
+  /* border: 2px dotted blue; */
+>>>>>>> b2084d10c6d6fab94a8bfb0f3203c43595fc99b1
   display: flex;
 }
 section{
   width: 100%;
   padding: 0px;
   margin: 0px;
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
 }
 
 aside{
   width: 200px;
+<<<<<<< HEAD
   border: 2px dotted red;
+=======
+  /* display: block; */
+  /* border: 2px dotted red; */
+>>>>>>> b2084d10c6d6fab94a8bfb0f3203c43595fc99b1
 }
 
 article{
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
 }
 
 section>article>div {
- border: 2px dotted blue;
+ /* border: 2px dotted blue; */
 }
 section>article>div>div {
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
 }
 
+<<<<<<< HEAD
 .textSkip{
   white-space: nowrap; 
   width: 100%; 
   overflow: hidden;
   text-overflow: ellipsis;
+=======
+}
+
+th {
+  background-color: darkgray;
+}
+
+td {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+>>>>>>> b2084d10c6d6fab94a8bfb0f3203c43595fc99b1
 }
